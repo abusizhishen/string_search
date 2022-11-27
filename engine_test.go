@@ -1,4 +1,4 @@
-package search
+package string_search
 
 import "testing"
 

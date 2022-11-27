@@ -1,3 +1,3 @@
-module search
+module string_search
 
 go 1.18

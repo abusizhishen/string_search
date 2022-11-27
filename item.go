@@ -1,4 +1,4 @@
-package search
+package string_search
 
 type Bucket struct {
 	maxStrLength int //max length start with current char

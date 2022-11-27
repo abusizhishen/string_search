@@ -1,4 +1,4 @@
-package search
+package string_search
 
 type Engine struct {
 	hash map[rune]*Bucket
