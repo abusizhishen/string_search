@@ -5,7 +5,7 @@ import "testing"
 func TestEngine_Search(t *testing.T) {
 	e := NewEngine()
 	e.InsertBatch(testDatas)
-	ids := e.Search([]rune("love you"))
+	ids := e.Search([]rune("i "))
 	t.Logf("ids: %v", ids)
 }
 

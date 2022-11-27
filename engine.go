@@ -40,7 +40,16 @@ func (e *Engine) Search(str []rune) []int {
 
 	var ids []int
 	for _, item := range e.hash {
-		tmpIds := item.search(str)
+		var tmpIds []int
+		if item.str == str[0] {
+			tmpIds = item.search(str[1:])
+			if len(tmpIds) == 0 {
+				tmpIds = item.search(str)
+			}
+		}else{
+			tmpIds = item.search(str)
+		}
+
 		if len(tmpIds) != 0 {
 			ids = append(ids, tmpIds...)
 		}
