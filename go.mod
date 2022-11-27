@@ -1,3 +1,3 @@
-module string_search
+module github.com/abusizhishen/string_search
 
 go 1.18
